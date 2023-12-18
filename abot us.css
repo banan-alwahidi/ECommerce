@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+.A {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5vh;
+    /* font-style: oblique; */
+    font-weight: bold;
+}
+
+.b {
+    width: 30%;
+}
+
+.h {
+    width: 90%;
+}
+
+.f12{
+    font-weight: bold;
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.c{
+    font-size: x-small;
+}
+.big-hero{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10%;
+}
+#ff{
+    font-weight: bold;
+    font-size: xx-large;
+    font-family: sans-serif;
+}

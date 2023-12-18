@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+.A {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5vh;
+    /* font-style: oblique; */
+    font-weight: bold;
+}
+
+.b {
+    width: 30%;
+}
+
+.h {
+    width: 90%;
+}
+
+.form-pro{
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.hh{
+    font-weight: bold;
+}
+.fh{
+    font-weight: bold;
+}
+.ah{
+    font-weight: bold;
+    opacity: .5;
+}
+.dis{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 5%;
+}
+.na{
+    opacity: .5;
+}
+.ac{
+    display: grid;
+    grid-template-rows: repeat(2 , 1fr);
+    gap: 5%;
+}

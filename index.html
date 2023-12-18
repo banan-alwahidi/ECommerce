@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Html/bootstrap-5.3.2-dist/css/bootstrap.css">
+    <link async='async' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'
+        rel='stylesheet'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+            box-sizing: border-box;
+        }
+
+        .A {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 5vh;
+            /* font-style: oblique; */
+            font-weight: bold;
+        }
+
+        .b {
+            width: 30%;
+        }
+
+        .h {
+            width: 90%;
+        }
+
+        .po {
+            position: relative;
+            left: 5%;
+            bottom: 15%;
+        }
+
+        .carousel-c {
+            width: 50%;
+            height: 50%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            position: relative;
+            left: 20%;
+
+
+        }
+
+        .hero-img {
+
+            left: 396px;
+            top: 16px;
+            width: 2 0%;
+            height: 20%px;
+        }
+
+        .custom-content {
+            width: 40%;
+        }
+
+        .bbb {
+            /* display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 10px; */
+            width:100%;
+        }
+
+        .btn1 {
+            position: relative;
+            left: 38%;
+            bottom: -7vh;
+        }
+
+        .x {
+            font-weight: bold;
+            color: red;
+        }
+
+        .y {
+            font-weight: bold;
+            color: rgb(0, 230, 38);
+        }
+
+        .z {
+            font-weight: bold;
+        }
+
+        .f {
+            font-weight: bold;
+            color: aliceblue;
+        }
+
+        .btn2 {
+            position: relative;
+            left: 70%;
+            bottom: -40%;
+        }
+
+        .all {
+            display: grid;
+            grid-template-columns: 1fr, 6fr;
+            gap: 10px;
+        }
+
+        .btn3 {
+            position: relative;
+            left: 70%;
+            top: -80%;
+            bottom: -60%;
+        }
+
+        .bgg {
+            width: 100%;
+            height: 140%;
+            background-color: black;
+            display: grid;
+            grid-template-columns: 1fr, 1fr;
+            gap: 3%;
+        }
+        .img22{
+            width: 40%;
+            position: relative;
+            left: 60%;
+            top: -20vh;
+            /* height: 420px;
+            width: 600px; */
+        }
+        .img5 {
+            position: relative;
+            left: 42%;
+            top: -5vh;
+            height: 420px;
+            width: 600px;
+        }
+
+        .ph {
+            height: 120px;
+            width: 443px;
+            position: relative;
+            left: 5%;
+            /* right: 55; */
+            top: 95%;
+        }
+        .sh{
+            position: relative;
+            left: 9%;
+            top: 9vh ;
+        }
+        .dg{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 10%;
+        }
+        .ps{
+            height: 120px;
+            width: 443px;
+            font-weight: bold;
+            position: relative;
+            top: -13%;
+            left: 10%;
+            color: rgb(255, 255, 255);
+
+        }
+        .q{
+            position: relative;
+            top: -44%;
+            right: -3%;
+        }
+        .fo{
+            position: relative;
+            top: -65%;
+            left: 185%;
+           
+        }
+        .fo1{
+            position: relative;
+            top: -140%;
+            left: 185%;
+           
+        }
+        .foo{
+            position: relative;
+            top: -40%;
+            left: -100%;
+            display: grid;
+            grid-template-columns: 1fr, 1fr;
+            gap: 4vh;
+        }
+        #v{
+            /* v img 
+            foo  font-awesome
+            jj text */
+         
+            width: 50%;
+            height: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content:center ;
+            position: relative;
+            top: 20%;
+            left: 25%;
+        }
+        .bc{
+            background-color: rgb(238, 236, 236);
+            border: none;
+
+        }
+        .cc{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5%;
+        }
+        .checked{
+          color: rgb(255, 222, 37);
+        }
+        .jj{
+            position: relative;
+            right: 2%;
+            top: -7px;
+            font-weight: bold;
+
+        }
+        .red{
+            color: red;
+        }
+        .bng{
+            border: 2px solid white;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 5%;
+        }
+        .f12{
+            font-weight: bold;
+            font-size: medium;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+@media (max-width:700px) {
+    #big{ 
+          /* flex-direction: column; */
+           grid-template-columns:2fr 1fr;
+          grid-template-rows: 2fr 1fr;
+          gap: 50px;
+    }
+} 
+ @media(max-width:500px){
+    #big{ 
+         /* flex-direction: column;  */
+          grid-template-columns: 1fr;
+    }
+ }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="big">
+        <!-- <nav class="navbar navbar-expand-lg">
+            <ul class="navbar-nav h">
+                <li class="nav-item ms-2 ">Home</li>
+                <li class="nav-item ms-2">Sign up</li>
+                <li class="nav-item ms-2">About us</li>
+                <li class="nav-item ms-2">Contact us</li>
+            </ul>
+        </nav> -->
+        <nav class="navbar navbar-expand-lg  A">
+            <div class="container-fluid">
+                <a class="navbar-brand b " href="#">Exclusive</a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../final demo/index.html" target="_parent">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../final demo/cuntact us .html" target="_parent">cuntact us </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../final demo/abot us.html" target="_parent">abot us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../final demo/Register.html " target="_parent" >sign in</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <!-- <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a> -->
+                            <ul class="dropdown-menu c">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li> -->
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <span class="po"> <i class='fas fa-heart' style='font-size:24px'></i>
+                        </span>
+                        <span class="po"><i class="fa fa-shopping-cart" style="font-size:24px"></i></i></span>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <hr>
+        <div id="carouselExampleIndicators" class="carousel slide carousel-c">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active ">
+                    <div class="bbb  ">
+                        <div class="custom-content ">
+
+                        </div>
+                        <div>
+                            <div class="bgg">
+                                <div class="sh">
+                                  
+                                    <img src="../final demo/img/1200px-Apple_gray_logo 1.png" alt="" >
+                                    <span class="y"> iPhone 14 Series</span>
+                    
+                                    <h3 class="f"> Up to 10% off <br>Voucher </h3>
+                                    <br>
+                                    <!-- <img src="../final demo/img/Frame 601.png" alt=""> -->
+                                  <a href=""> Shop Now!</a>
+                                </div>
+                                <img class="img22" src="../final demo/img/hero_endframe__cvklg0xk3w6e_large 2 (1).png " alt="">
+                    
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+               
+                <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                  </div>
+              
+
+                <div class="carousel-item">
+                    <img src="../final demo/img/2022-06-17 (7).png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+          <br>
+          <br>
+          <div>
+            <p class="x"> Today’s</p>
+            <h3 class="z"> Flash Sales</h3>
+           
+          </div>
+          <br>
+          
+        <div class="bng">
+            <!--  -->
+           
+
+            <div class="card "  style="width: 18rem;">
+                <div class="bc">
+                  <img src="../final demo/img/g92-2-500x500 1 (1).png" class="card-img-top" alt="..." id="v">
+                  <div class="q">
+                    <img src="../final demo/img/Discount percent.png" alt="">
+                  </div>
+                
+                  <div class="foo">
+                  <div class="fo">
+                    <i class="fa fa-heart" style="font-size:24px"></i>
+                   </div>
+                    <div class="fo1">
+                    
+                        <i class="fa fa-eye" style="font-size:24px"></i></i>
+                   </div>
+                </div>
+            </div>
+                <div class="card-body jj">
+                    <br>
+                  <span class="card-text">HAVIT HV-G92 Gamepad</span>
+                  <span class="red">$120 </span> <span> $160</span>
+                    <div>
+                    <span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span>
+                  
+                    </div>
+                </div>
+              </div>
+              <!--  -->
+           
+             
+            <!-- <img src="../final demo/img/Cart With Flat Discount (3).png" alt=""> -->
+            <div >
+            <img src="../final demo/img/Cart With Flat Discount (2).png" alt=""> </div>
+            <div > <img src="../final demo/img/Cart With Flat Discount (1).png" alt=""></div>
+            <div >  <img src="../final demo/img/Cart With Flat Discount.png" alt=""></div>
+        
+        </div>
+        <br>
+        <div class="btn1">
+            <button type="button" class="btn btn-danger">View All Products</button>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+            <div class="all">
+                <p class="x">Categories</p>
+                <h3 class="z"> Browse By Category</h3>
+
+            </div>
+            <div class="btn2">
+
+                <button> <img src="../final demo/img/Fill With Left Arrow.png" alt=""> </button>
+                <button> <img src="../final demo/img/Fill with Right Arrow.png" alt=""> </button>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div>
+            <img src="../final demo/img/Frame 597.png" alt="">
+        </div>
+        <br>
+        <br>
+
+        <div>
+            <div class="all">
+                <p class="x"> This Month</p>
+                <h3 class="z"> Best Selling Products </h3>
+                <div class="btn3">
+                    <button type="button" class="btn btn-danger">View All </button>
+                </div>
+            </div>
+            <div>
+                <img src="../final demo/img/Frame 603.png" alt="">
+            </div>
+            <br>
+            <br>
+        </div>
+        <!--  -->
+      
+        <br><br>
+        <!--  -->
+        <div class="bgg">
+            <div class="ph">
+                <p class="y"> Categories</p>
+
+                <h3 class="f"> Enhance Your Music Experience </h3>
+                <br>
+                <img src="../final demo/img/Frame 601.png" alt="">
+                <br>
+                <br>
+                <br>
+                <button type="button" class="btn btn-success">Buy Now!</button>
+            </div>
+            <img class="img5" src="../final demo/img/Frame 694.png " alt="">
+
+        </div>
+        <br>
+        <br>
+        <div>
+            <p class="x"> Our Products</p>
+            <h3 class="z"> Explore Our Products </h3>
+            <br>
+            <img src="../final demo/img/Frame 734 (1).png" alt="">
+
+            <div class="btn1">
+                <button type="button" class="btn btn-danger">View All Products</button>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div>
+            <p class="x"> Featured</p>
+            <h3 class="z"> New Arrival </h3>
+        </div>
+        <div class="dg">
+            <div>
+                <img src="../final demo/img/ps5-slim-goedkope-playstation_large 1.png" alt="">
+                <h5 class="ps">PlayStation 5
+                    Black and White version of the PS5 coming out on sale.
+                  <a href=""> Shop Now </a>  </h5>
+            </div>
+            <div>
+                <img src="../final demo/img/Frame 685.png" alt="">
+                <br>
+                <br>
+                <br>
+                <img src="../final demo/img/Frame 737.png" alt="">
+                <img src="" alt="">
+            </div>
+        </div>
+        
+        <br>
+        <div class="container text-center ">
+        <div class="row">
+            <div class="col">
+              <img src="../final demo/img/Services (1).png" alt="">
+              <br>
+              <br>
+              <h6 class="f12">FREE AND FAST DELIVERY</h6>
+              <p class="f12">Free delivery for all orders over $140</p>
+            </div>
+            <div class="col">
+             <img src="../final demo/img/Services.png" alt="">
+             <br>
+             <br>
+             <h6 class="f12">FREE AND FAST DELIVERY</h6>
+             <p class="f12">Free delivery for all orders over $140</p>
+            </div>
+            <div class="col">
+              <img src="../final demo/img/Services3.png" alt="">
+              <br>
+              <br>
+              <h6 class="f12">FREE AND FAST DELIVERY</h6>
+              <p class="f12">Free delivery for all orders over $140</p>
+            </div>
+          </div>
+          <!-- footer -->
+          <div class="container my-5">
+
+            <footer class="bg-dark text-center text-lg-start text-white">
+              <!-- Grid container -->
+              <div class="container p-4">
+                <!--Grid row-->
+                <div class="row mt-4">
+                  <!--Grid column-->
+                  <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">See other books</h5>
+          
+                    <ul class="list-unstyled mb-0">
+                      <li>
+                        <a href="#!" class="text-white"><i class="fas fa-book fa-fw fa-sm me-2"></i>Bestsellers</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="text-white"><i class="fas fa-book fa-fw fa-sm me-2"></i>All books</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="text-white"><i class="fas fa-user-edit fa-fw fa-sm me-2"></i>Our authors</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!--Grid column-->
+          
+                  <!--Grid column-->
+                  <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Execution of the contract</h5>
+          
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="#!" class="text-white"><i class="fas fa-shipping-fast fa-fw fa-sm me-2"></i>Supply</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="text-white"><i class="fas fa-backspace fa-fw fa-sm me-2"></i>Returns</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="text-white"><i class="far fa-file-alt fa-fw fa-sm me-2"></i>Regulations</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="text-white"><i class="far fa-file-alt fa-fw fa-sm me-2"></i>Privacy policy</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!--Grid column-->
+          
+                  <!--Grid column-->
+                  <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Publishing house</h5>
+          
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="#!" class="text-white">The BookStore</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="text-white">123 Street</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="text-white">05765 NY</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="text-white"><i class="fas fa-briefcase fa-fw fa-sm me-2"></i>Send us a book</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!--Grid column-->
+          
+                  <!--Grid column-->
+                  <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Write to us</h5>
+          
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="#!" class="text-white"><i class="fas fa-at fa-fw fa-sm me-2"></i>Help in purchasing</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="text-white"><i class="fas fa-shipping-fast fa-fw fa-sm me-2"></i>Check the order status</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="text-white"><i class="fas fa-envelope fa-fw fa-sm me-2"></i>Join the newsletter</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!--Grid column-->
+                </div>
+                <!--Grid row-->
+              </div>
+              <!-- Grid container -->
+          
+              <!-- Copyright -->
+              <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                © 2021 Copyright:
+                <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+              </div>
+              <!-- Copyright -->
+            </footer>
+          
+          </div>
+          <!-- End of .container -->
+          <script src="../final demo/img/bootstrap-5.3.2-dist/js/bootstrap.js">
+
+        </script>
+        <script>
+            const toastTrigger = document.getElementById('liveToastBtn')
+            const toastLiveExample = document.getElementById('liveToast')
+
+            if (toastTrigger) {
+                const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+                toastTrigger.addEventListener('click', () => {
+                    toastBootstrap.show()
+                })
+            }
+        </script>
+</body>
+
+</html>
